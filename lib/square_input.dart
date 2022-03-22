@@ -14,10 +14,10 @@ class SquareInputView extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<SquareInputView> createState() => _InputCodeState();
+  State<SquareInputView> createState() => _SquareInputViewState();
 }
 
-class _InputCodeState extends State<SquareInputView> {
+class _SquareInputViewState extends State<SquareInputView> {
   String codeEntered = '';
   final focusNodes = <FocusNode>[];
   final controllers = <TextEditingController>[];
