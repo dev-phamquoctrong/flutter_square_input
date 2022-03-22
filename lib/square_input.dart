@@ -3,21 +3,21 @@ library square_input;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class InputCodeView extends StatefulWidget {
+class SquareInputView extends StatefulWidget {
   final ValueChanged<String> onResult;
   final int squareInputLength;
 
-  const InputCodeView({
+  const SquareInputView({
     Key? key,
     required this.onResult,
     this.squareInputLength = 4,
   }) : super(key: key);
 
   @override
-  State<InputCodeView> createState() => _InputCodeState();
+  State<SquareInputView> createState() => _InputCodeState();
 }
 
-class _InputCodeState extends State<InputCodeView> {
+class _InputCodeState extends State<SquareInputView> {
   String codeEntered = '';
   final focusNodes = <FocusNode>[];
   final controllers = <TextEditingController>[];
